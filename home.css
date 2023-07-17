@@ -1,0 +1,355 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RWD reset */
+img{
+	max-width:100%;
+	height:auto;
+	}
+	
+/* 全域border-box */
+	
+	*,*::before,*::after{
+	box-sizing: border-box;
+	}
+
+body{
+    background-color: #F7F5F2;
+	font-family: 'Roboto Serif', serif;
+}
+a{
+	text-decoration: none;
+}
+
+.ma-0{
+	margin: 0 auto;
+}
+.mw-1200{
+	max-width: 1200px;
+}
+/* header */
+.container{
+    /* max-width: 1200px; */
+	/* margin: 0 auto; */
+    display: flex;
+	justify-content: space-between;
+}
+.menu{
+	display: flex;
+}
+.menu a{
+	color:#3E4459;
+	font-size: 1.0625em;
+}
+.menu li{
+	padding: 40px 12px;
+}
+/* banner */
+.banner{
+	/* max-width: 1200px;
+	margin: 0 auto; */
+	display: flex;
+}
+.banner-text{
+	width: 89%;
+	position: relative;
+	z-index: 2;
+	flex-shrink: 0;
+	/* box-sizing: border-box; */
+	padding: 10.2%;
+}
+.banner h1{
+	margin-top: 200px;
+	margin-bottom: 20px;
+	font-size: 2.5em;
+	font-weight: 500;
+	color: #3E4459;
+}
+.banner span{
+	color: #ffffff;
+}
+.banner-text p{
+	color: #32353b;
+	line-height: 1.5;
+	width: 60%;
+}
+.banner-pic{
+	width: 60%;
+	flex-shrink: 0;
+}
+.banner img{
+	width: 100%;
+	display: block;
+}
+.banner > :first-child{
+	margin-right: -55%;
+}
+/* intro */
+.intro{
+	padding: 60px 100px 40px;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+.intro h2{
+	font-size: 2.25em;
+	line-height: 1.2;
+	color: #3E4459;
+	margin-left: 7%;
+	position: relative;
+}
+.intro h2::before{
+	content: url(picture/home/Ellipse\ 16.svg);
+	position: absolute;
+	left: -20px;
+	top: -15px;
+	z-index: -1;
+}
+.intro p{
+	margin-top: 35px;
+	margin-left: 166px;
+	color: #3E4459;
+	line-height: 34px;
+}
+/* 滿版圖片 */
+.intro-pic{
+	position: relative;
+	margin-bottom: 100px;
+}
+.intro-pic img{
+	width: 100vw;
+	display: block;
+	object-fit: cover;
+}
+.intro-pic p{
+	color: #ffffff;
+	font-size: 2.5em;
+	font-weight: 500;
+	position: absolute;
+	left: 28%;
+	top: 315px;
+}
+/* 裝置layout */
+.devices{
+	display: flex;
+	margin-bottom: -10px;
+}
+.devices-card-layout{
+	width: 60%;
+	margin-left: 100px;
+}
+.devices-card-layout div:first-child{
+	width: 35.416667%;
+	position: relative;
+	left: 8.611111%;
+	box-shadow: 10px 5px 5px #90908e;
+}
+.devices-card-layout div:nth-child(2){
+	width: 41.25%;
+	position: relative;
+	left: 39.1666%;
+	bottom: 8.611111%;
+	box-shadow: -10px 5px 5px #90908e;
+}
+.devices-card-layout div:nth-child(3){
+	width: 44.861111%;
+	position: relative;
+	bottom: 16.11111%;
+	box-shadow: 7px 5px 5px #90908e;
+}
+.devices-card{
+	border-radius: 5px;
+	overflow: hidden;
+}
+.devices-card img{
+	width: 100%;
+	display: block;
+}
+.devices-text{
+	padding-top: 300px;
+	width: 40%;
+	padding-right: 6.6%;
+}
+.devices-text p{
+	font-size: 1.5625em;
+	line-height: 31px;
+	margin-bottom: 60px;
+	color: #3E4459;
+	position: relative;
+}
+.devices-text p::before{
+	content: url(picture/home/Vector.svg);
+	color: #DEE4EB;
+	width: 28px;
+	height: auto;
+	position: absolute;
+	top: -2.625em;
+	left: -1em;
+}
+.devices-text p::after{
+	content: url(picture/home/Vector.svg);
+	color: #DEE4EB;
+	width: 28px;
+	height: auto;
+	transform: scaleX(-1);
+	position: absolute;
+	bottom: -2.625em;
+	right: -.5em;
+}
+.learn-more-btn{
+	background-color: #3E4459;
+	color: #ffffff;
+	border-radius: 20px;
+	width: 160px;
+	padding: 15px 25px;
+	border: none;
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+}
+/* 跑馬燈裝飾線 */
+.deco-line p{
+	max-width: 1920px;
+	/* width: 100%; */
+	white-space:pre;
+	overflow:hidden;
+	color: #a3bad91a;
+	font-size: 144px;
+	font-family: 'Roboto', sans-serif;
+}
+/* intro of personalization */
+.intro-personalization{
+	display: flex;
+	padding-bottom: 85px;
+	background-image: url(picture/home/bgc-noise-warm.jpg);
+}
+.intro-personalization-text{
+	width: 53%;
+	padding-top: 80px;
+	padding-left: 8%;
+	line-height: 1.2;
+}
+.intro-personalization-text h2{
+	font-size: 2.5em;
+	font-weight: 500;
+	color: #3E4459;
+	margin-bottom: 65px;
+}
+.intro-personalization-text p{
+	font-size: 1.0625em;
+	color: #3E4459;
+	line-height: 30px;
+	margin-bottom: 60px;
+}
+.intro-personalization-pic{
+	width: 47%;
+	padding-left: 50px;
+	padding-top: 82px;
+}
+.intro-personalization-pic img{
+	display: block;
+}
+/* carousel */
+.carousel{
+	display: flex;
+	/* max-width: 1920px; */
+	overflow: hidden;
+	margin-bottom: 100px;
+	background-image: url(picture/home/bgc-noise-warm.jpg);
+}
+.carousel-item{
+	width: 425px;
+	margin: 5% 2%;
+	flex-shrink: 0;
+}
+.carousel-item img{
+	max-width: 100%;
+	display: block;
+}
+/* .carousel-item:first-child img, .carousel-item:nth-child(3) img{
+	opacity: 0.7;
+} */
+/* 睡眠 */
+.sleep-intro{
+	display: flex;
+	justify-content: center;
+}
+.sleep-intro-pic{
+	width: 47.75%;
+}
+.sleep-intro-txt{
+	width: 35.416667%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 80px;
+	padding-bottom: 55px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.sleep-intro-txt p{
+	color: #3E4459;
+	font-size: 1.0625em;
+	line-height: 30px;
+	margin-top: -50px;
+}
+.sleep-intro-txt h3{
+	color: #3E4459;
+	font-size: 1.875em;
+	line-height: 1.875em;
+}
+.sleep-intro-txt a{
+	text-decoration: none;
+	color: #000;
+	align-self: flex-end;
+	font-weight: 500;
+}
+.material-symbols-outlined {
+  	position: relative;
+  	top:6px;
+}
+@media screen and (max-width: 1200px) {
+	.banner span{
+		color: #3E4459;
+	}
+
+}
